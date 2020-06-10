@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+html {
+    background-color: grey;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    width: 60vw;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(70, 38, 38);
+    text-align: center;
+    line-height: 100px;
+    margin: 5px auto;
+    transition: background-color 1s linear, width 1s, transform 1s;
+}
+
+#box:hover {
+    width: 100%;
+    background-color: aquamarine;
+    transform: rotate(360deg);
+}
+
+#box2 {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    text-align: center;
+    line-height: 100px;
+    animation: myslidein 10s;
+}
+
+@keyframes myslidein {
+    0% {
+        margin-left: 100%;
+        width: 50px;
+        background-color: black;
+    }
+
+    20% {
+        margin-left: 20%;
+        background-color: rebeccapurple;
+    }
+
+    100% {
+        margin-left: 0%;
+        width: 100px;
+        background-color: brown;
+    }
+
+}

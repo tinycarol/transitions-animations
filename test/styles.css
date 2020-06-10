@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+html {
+    background-color: grey;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    width: 60vw;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+}
+
+.transition+.animation {
+    margin-top: 15px;
+}
+
+.transition,
+.animation {
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.transition {
+    background-color: lightcoral;
+    transition: width 1s ease-in-out, background-color 1s linear, transform 1s;
+}
+
+.transition:hover {
+    width: 100%;
+    background-color: aquamarine;
+    transform: rotate(720deg);
+}
+
+.animation {
+    background-color: indianred;
+    animation-name: slidein;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 100%;
+	}
+	
+	25% {
+		margin-left: 0%;
+	}
+	
+	50% {
+		margin-left: 80%;
+	}
+	
+	75% {
+		margin-left: 0%;
+	}
+
+    100% {
+        margin-left: calc(50% - 100px/2);
+    }
+
+}
