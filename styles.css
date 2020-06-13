@@ -24,6 +24,7 @@ body {
 
 #box:hover {
     width: 100%;
+    /* Holi */
     height: 100px;
     background-color: aquamarine;
     transform: rotate(360deg);
